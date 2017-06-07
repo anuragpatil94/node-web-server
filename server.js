@@ -70,12 +70,19 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'Home',
-        message: 'Welcome to our page'
+        message: 'Welcome to Home page'
     });
 });
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About',
+        message: 'Welcome to About page'
+    });
+});
+app.get('/projects', (req, res) => {
+    res.render('about.hbs', {
+        pageTitle: 'Projects',
+        message: 'Welcome to Projects page'
     });
 });
 app.get('/bad', (req, res) => {
